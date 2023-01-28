@@ -1,9 +1,12 @@
+/** @format */
+
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../layout/Main";
 import About from "../pages/About";
 import Cart from "../pages/Cart";
 import Home from "../pages/Home";
 import TopRated from "../pages/TopRated";
+import WishList from "../pages/WishList";
 
 const routes = createBrowserRouter([
   {
@@ -25,6 +28,10 @@ const routes = createBrowserRouter([
       {
         path: "cart",
         element: <Cart />,
+      },
+      {
+        path: "wishList",
+        element: <WishList/>,
       },
     ],
   },
